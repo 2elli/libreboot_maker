@@ -22,14 +22,14 @@ ifeq (${MAC_ADDR},xx:xx:xx:xx:xx:xx)
 $(error MAC_ADDR is set to placeholder value. Update!)
 endif
 
+build: setup compile_libreboot apply_mac_addr
+
 setup:
 	@echo "========================================="
 	@echo "Building for board: ${BOARD}"
 	@echo "Target ROM: ${TARGET_ROM}"
 	@echo "Output ROM: ${NEW_ROM}"
 	@echo "========================================="
-
-build: setup compile_libreboot apply_mac_addr
 
 compile_libreboot:
 	cd ${LBMK_DIR} && \
