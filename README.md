@@ -10,7 +10,7 @@ makefile and repo to build lbmk and apply a mac address
 
 then to build,
 ```
-git submodule init
+git submodule update
 make build
 ```
 
