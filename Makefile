@@ -33,7 +33,7 @@ setup:
 
 compile_libreboot:
 	cd ${LBMK_DIR} && \
-		XBMK_RELEASE=y XBMK_THREADS=${THREADS} ./mk -b coreboot ${BOARD}
+		XBMK_THREADS=${THREADS} ./mk -b coreboot ${BOARD}
 
 build_nvm:
 	${MAKE} -C ${LBMK_DIR}/util/nvmutil
