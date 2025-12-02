@@ -1,0 +1,3 @@
+[submodule "lbmk"]
+	path = lbmk
+	url = https://codeberg.org/libreboot/lbmk.git
